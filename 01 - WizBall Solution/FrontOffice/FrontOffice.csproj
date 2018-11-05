@@ -1,0 +1,487 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{30F39C2E-D7A9-4BFB-AF97-A3B527DB0DD8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FrontOffice</RootNamespace>
+    <AssemblyName>FrontOffice</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\ViewAboutUs.aspx" />
+    <Content Include="Pages\ViewContactUs.aspx" />
+    <Content Include="Pages\ViewEditProfile.aspx" />
+    <Content Include="Pages\ViewHistoryTips.aspx" />
+    <Content Include="Pages\ViewHome.aspx" />
+    <Content Include="Pages\ViewLogin.aspx" />
+    <Content Include="Pages\ViewRecoverPassword.aspx" />
+    <Content Include="Pages\ViewRegistration.aspx" />
+    <Content Include="Public\Bootstrap\Bootstrap4.css" />
+    <Content Include="Public\Fontawesome\css\all.min.css" />
+    <Content Include="Public\Fontawesome\webfonts\fa-brands-400.svg" />
+    <Content Include="Public\Fontawesome\webfonts\fa-regular-400.svg" />
+    <Content Include="Public\Fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Public\Imgs\Competitions\bundesliga.png" />
+    <Content Include="Public\Imgs\Competitions\championship.png" />
+    <Content Include="Public\Imgs\Competitions\eredivisie.png" />
+    <Content Include="Public\Imgs\Competitions\la_liga.png" />
+    <Content Include="Public\Imgs\Competitions\ligue1.png" />
+    <Content Include="Public\Imgs\Competitions\premier_league.png" />
+    <Content Include="Public\Imgs\Competitions\primeira_liga.png" />
+    <Content Include="Public\Imgs\Competitions\serie_a.png" />
+    <Content Include="Public\Imgs\Markets\ft_over_two_and_half_goals.png" />
+    <Content Include="Public\Imgs\Teams\england\arsenal.ico" />
+    <Content Include="Public\Imgs\Teams\england\aston_villa.ico" />
+    <Content Include="Public\Imgs\Teams\england\birmingham_city.ico" />
+    <Content Include="Public\Imgs\Teams\england\blackburn_rovers.ico" />
+    <Content Include="Public\Imgs\Teams\england\bolton_wanderers.ico" />
+    <Content Include="Public\Imgs\Teams\england\bournemouth.png" />
+    <Content Include="Public\Imgs\Teams\england\brentford.png" />
+    <Content Include="Public\Imgs\Teams\england\brighton_hove_albion.png" />
+    <Content Include="Public\Imgs\Teams\england\bristol_city.png" />
+    <Content Include="Public\Imgs\Teams\england\burnley.ico" />
+    <Content Include="Public\Imgs\Teams\england\cardiff_city.ico" />
+    <Content Include="Public\Imgs\Teams\england\celtic.ico" />
+    <Content Include="Public\Imgs\Teams\england\chelsea.ico" />
+    <Content Include="Public\Imgs\Teams\england\coventry_city.ico" />
+    <Content Include="Public\Imgs\Teams\england\crystal_palace.png" />
+    <Content Include="Public\Imgs\Teams\england\derby_county.ico" />
+    <Content Include="Public\Imgs\Teams\england\everton.ico" />
+    <Content Include="Public\Imgs\Teams\england\fulham.ico" />
+    <Content Include="Public\Imgs\Teams\england\glascow_rangers.ico" />
+    <Content Include="Public\Imgs\Teams\england\hearts.ico" />
+    <Content Include="Public\Imgs\Teams\england\huddersfield_town.png" />
+    <Content Include="Public\Imgs\Teams\england\hull_city.png" />
+    <Content Include="Public\Imgs\Teams\england\ipswich_town.ico" />
+    <Content Include="Public\Imgs\Teams\england\leeds_united.ico" />
+    <Content Include="Public\Imgs\Teams\england\leicester_city.ico" />
+    <Content Include="Public\Imgs\Teams\england\liverpool.ico" />
+    <Content Include="Public\Imgs\Teams\england\manchester_city.ico" />
+    <Content Include="Public\Imgs\Teams\england\manchester_united.ico" />
+    <Content Include="Public\Imgs\Teams\england\middlesbrough.ico" />
+    <Content Include="Public\Imgs\Teams\england\millwall.ico" />
+    <Content Include="Public\Imgs\Teams\england\newcastle_united.ico" />
+    <Content Include="Public\Imgs\Teams\england\norwich_city.ico" />
+    <Content Include="Public\Imgs\Teams\england\nottingham_forest.ico" />
+    <Content Include="Public\Imgs\Teams\england\Portsmouth FC.ico" />
+    <Content Include="Public\Imgs\Teams\england\preston_north_end.png" />
+    <Content Include="Public\Imgs\Teams\england\queens_park_rangers.ico" />
+    <Content Include="Public\Imgs\Teams\england\reading.ico" />
+    <Content Include="Public\Imgs\Teams\england\rotherham_united.png" />
+    <Content Include="Public\Imgs\Teams\england\Scotland.ico" />
+    <Content Include="Public\Imgs\Teams\england\sheffield_united.png" />
+    <Content Include="Public\Imgs\Teams\england\sheffield_wendesday.ico" />
+    <Content Include="Public\Imgs\Teams\england\southampton.ico" />
+    <Content Include="Public\Imgs\Teams\england\stoke_city.ico" />
+    <Content Include="Public\Imgs\Teams\england\Sunderland.ico" />
+    <Content Include="Public\Imgs\Teams\england\swansea_city.ico" />
+    <Content Include="Public\Imgs\Teams\england\tottenham_hotspur.ico" />
+    <Content Include="Public\Imgs\Teams\england\watford.ico" />
+    <Content Include="Public\Imgs\Teams\england\west_bromwich_albion.ico" />
+    <Content Include="Public\Imgs\Teams\england\west_ham_united.ico" />
+    <Content Include="Public\Imgs\Teams\england\wigan_athletic.ico" />
+    <Content Include="Public\Imgs\Teams\england\wolverhampton_wanderers.ico" />
+    <Content Include="Public\Imgs\Teams\england\Wrexham.ico" />
+    <Content Include="Public\Imgs\Teams\france\AJ Auxerre.ico" />
+    <Content Include="Public\Imgs\Teams\france\alsace.ico" />
+    <Content Include="Public\Imgs\Teams\france\amiens.png" />
+    <Content Include="Public\Imgs\Teams\france\angers.ico" />
+    <Content Include="Public\Imgs\Teams\france\AS Angouleme.ico" />
+    <Content Include="Public\Imgs\Teams\france\AS Cannes.ico" />
+    <Content Include="Public\Imgs\Teams\france\AS Nancy Lorraine.ico" />
+    <Content Include="Public\Imgs\Teams\france\Berrichonne de Chateauroux.ico" />
+    <Content Include="Public\Imgs\Teams\france\caen.ico" />
+    <Content Include="Public\Imgs\Teams\france\CS Sedan.ico" />
+    <Content Include="Public\Imgs\Teams\france\dfco.png" />
+    <Content Include="Public\Imgs\Teams\france\en_avant_guingamp.ico" />
+    <Content Include="Public\Imgs\Teams\france\FC Gueugnon.ico" />
+    <Content Include="Public\Imgs\Teams\france\FC Lorient.ico" />
+    <Content Include="Public\Imgs\Teams\france\FC Metz.ico" />
+    <Content Include="Public\Imgs\Teams\france\FC Rouen.ico" />
+    <Content Include="Public\Imgs\Teams\france\FC Sochaux Montbeliard.ico" />
+    <Content Include="Public\Imgs\Teams\france\girordins_bordeaux.ico" />
+    <Content Include="Public\Imgs\Teams\france\lille.ico" />
+    <Content Include="Public\Imgs\Teams\france\monaco.ico" />
+    <Content Include="Public\Imgs\Teams\france\montpellier.ico" />
+    <Content Include="Public\Imgs\Teams\france\nantes_atlantique.ico" />
+    <Content Include="Public\Imgs\Teams\france\ogc_nice.ico" />
+    <Content Include="Public\Imgs\Teams\france\olumpique_marseille.ico" />
+    <Content Include="Public\Imgs\Teams\france\olympique_lyonnais.ico" />
+    <Content Include="Public\Imgs\Teams\france\olympique_nimes.ico" />
+    <Content Include="Public\Imgs\Teams\france\paris_saint_germain.ico" />
+    <Content Include="Public\Imgs\Teams\france\RC Lens.ico" />
+    <Content Include="Public\Imgs\Teams\france\RC Paris.ico" />
+    <Content Include="Public\Imgs\Teams\france\saint_etienne.ico" />
+    <Content Include="Public\Imgs\Teams\france\SC Bastia.ico" />
+    <Content Include="Public\Imgs\Teams\france\Stade Francais.ico" />
+    <Content Include="Public\Imgs\Teams\france\Stade Lavallois.ico" />
+    <Content Include="Public\Imgs\Teams\france\stade_reims.ico" />
+    <Content Include="Public\Imgs\Teams\france\stade_rennais_1901.ico" />
+    <Content Include="Public\Imgs\Teams\france\toulouse.ico" />
+    <Content Include="Public\Imgs\Teams\france\Troyes AC.ico" />
+    <Content Include="Public\Imgs\Teams\germany\1.FC Kaiserslautern.ico" />
+    <Content Include="Public\Imgs\Teams\germany\1.FC Koln.ico" />
+    <Content Include="Public\Imgs\Teams\germany\augsburg.png" />
+    <Content Include="Public\Imgs\Teams\germany\bayern_munchen.ico" />
+    <Content Include="Public\Imgs\Teams\germany\bayer_leverkusen.ico" />
+    <Content Include="Public\Imgs\Teams\germany\borussia_dortmund.ico" />
+    <Content Include="Public\Imgs\Teams\germany\borussia_monchengladbach.ico" />
+    <Content Include="Public\Imgs\Teams\germany\dusseldorf.png" />
+    <Content Include="Public\Imgs\Teams\germany\eintracht_frankfurt.ico" />
+    <Content Include="Public\Imgs\Teams\germany\freiburg.png" />
+    <Content Include="Public\Imgs\Teams\germany\Hamburger SV.ico" />
+    <Content Include="Public\Imgs\Teams\germany\hannove_ 96.ico" />
+    <Content Include="Public\Imgs\Teams\germany\Hansa Rostock.ico" />
+    <Content Include="Public\Imgs\Teams\germany\hertha.ico" />
+    <Content Include="Public\Imgs\Teams\germany\hoffenheim.png" />
+    <Content Include="Public\Imgs\Teams\germany\Karlsruher SC.ico" />
+    <Content Include="Public\Imgs\Teams\germany\leipzig.png" />
+    <Content Include="Public\Imgs\Teams\germany\mainz.png" />
+    <Content Include="Public\Imgs\Teams\germany\MSV Duisburg.ico" />
+    <Content Include="Public\Imgs\Teams\germany\nurnberg.ico" />
+    <Content Include="Public\Imgs\Teams\germany\schalke _04.ico" />
+    <Content Include="Public\Imgs\Teams\germany\stuttgart.ico" />
+    <Content Include="Public\Imgs\Teams\germany\TSV 1860 Munchen.ico" />
+    <Content Include="Public\Imgs\Teams\germany\VfL Bochum.ico" />
+    <Content Include="Public\Imgs\Teams\germany\werder_bremen.ico" />
+    <Content Include="Public\Imgs\Teams\germany\wolfsburg.ico" />
+    <Content Include="Public\Imgs\Teams\italy\AC Cesena.ico" />
+    <Content Include="Public\Imgs\Teams\italy\ac_milan.ico" />
+    <Content Include="Public\Imgs\Teams\italy\ac_parma.ico" />
+    <Content Include="Public\Imgs\Teams\italy\as_roma.ico" />
+    <Content Include="Public\Imgs\Teams\italy\atalanta.ico" />
+    <Content Include="Public\Imgs\Teams\italy\bologna.ico" />
+    <Content Include="Public\Imgs\Teams\italy\cagliari.ico" />
+    <Content Include="Public\Imgs\Teams\italy\chievo_verona.ico" />
+    <Content Include="Public\Imgs\Teams\italy\empoli.ico" />
+    <Content Include="Public\Imgs\Teams\italy\fiorentina.ico" />
+    <Content Include="Public\Imgs\Teams\italy\frosinone_calcio.png" />
+    <Content Include="Public\Imgs\Teams\italy\genoa.ico" />
+    <Content Include="Public\Imgs\Teams\italy\Hellas Verona.ico" />
+    <Content Include="Public\Imgs\Teams\italy\internazionale.ico" />
+    <Content Include="Public\Imgs\Teams\italy\juventus.ico" />
+    <Content Include="Public\Imgs\Teams\italy\lazio.ico" />
+    <Content Include="Public\Imgs\Teams\italy\Livorno.ico" />
+    <Content Include="Public\Imgs\Teams\italy\napoli.ico" />
+    <Content Include="Public\Imgs\Teams\italy\Palermo.ico" />
+    <Content Include="Public\Imgs\Teams\italy\Perugia.ico" />
+    <Content Include="Public\Imgs\Teams\italy\sampdoria.ico" />
+    <Content Include="Public\Imgs\Teams\italy\sassuolo.png" />
+    <Content Include="Public\Imgs\Teams\italy\spal.png" />
+    <Content Include="Public\Imgs\Teams\italy\torino.ico" />
+    <Content Include="Public\Imgs\Teams\italy\udinese.ico" />
+    <Content Include="Public\Imgs\Teams\italy\Vicenza.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\ado_den_haag.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\ajax.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\az_alkmaar.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\emmen.png" />
+    <Content Include="Public\Imgs\Teams\netherlands\Excelsior.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\FC Haarlem.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\FC Twente Enschede.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\Feyenoord.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\fortuna.png" />
+    <Content Include="Public\Imgs\Teams\netherlands\graafschap.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\groningen.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\Heerenveen.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\heracles_almelo.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\nac_breda.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\NEC Nijmegen.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\Netherlands.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\pec_zwolle.png" />
+    <Content Include="Public\Imgs\Teams\netherlands\psv_eindhoven.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\Roda JC Kerkrade.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\Sparta Rotterdam.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\utrecht.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\venlo.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\vitesse.ico" />
+    <Content Include="Public\Imgs\Teams\netherlands\willem_tilburg.ico" />
+    <Content Include="Public\Imgs\Teams\portugal\AcademicaCoimbra.ico" />
+    <Content Include="Public\Imgs\Teams\portugal\BeiraMar.ico" />
+    <Content Include="Public\Imgs\Teams\portugal\Belenenses.ico" />
+    <Content Include="Public\Imgs\Teams\portugal\Benfica.ico" />
+    <Content Include="Public\Imgs\Teams\portugal\Boavista.ico" />
+    <Content Include="Public\Imgs\Teams\portugal\Chaves.png" />
+    <Content Include="Public\Imgs\Teams\portugal\DesportivoAves.png" />
+    <Content Include="Public\Imgs\Teams\portugal\EstrelaAmadora.ico" />
+    <Content Include="Public\Imgs\Teams\portugal\Feirense.png" />
+    <Content Include="Public\Imgs\Teams\portugal\Leixoes.ico" />
+    <Content Include="Public\Imgs\Teams\portugal\Maritimo.ico" />
+    <Content Include="Public\Imgs\Teams\portugal\Moreirense.png" />
+    <Content Include="Public\Imgs\Teams\portugal\Nacional.ico" />
+    <Content Include="Public\Imgs\Teams\portugal\NavalMaio.ico" />
+    <Content Include="Public\Imgs\Teams\portugal\PacosFerreira.ico" />
+    <Content Include="Public\Imgs\Teams\portugal\Portimonense.png" />
+    <Content Include="Public\Imgs\Teams\portugal\Porto.ico" />
+    <Content Include="Public\Imgs\Teams\portugal\RioAve.png" />
+    <Content Include="Public\Imgs\Teams\portugal\SantaClara.png" />
+    <Content Include="Public\Imgs\Teams\portugal\SportingBraga.ico" />
+    <Content Include="Public\Imgs\Teams\portugal\SportingLisbon.ico" />
+    <Content Include="Public\Imgs\Teams\portugal\Tondela.png" />
+    <Content Include="Public\Imgs\Teams\portugal\UniaoLeiria.ico" />
+    <Content Include="Public\Imgs\Teams\portugal\VitoriaGuimaraes.ico" />
+    <Content Include="Public\Imgs\Teams\portugal\VitoriaSetubal.ico" />
+    <Content Include="Public\Imgs\Teams\spain\athletic_bilbaoa.ico" />
+    <Content Include="Public\Imgs\Teams\spain\atletico_madrid.ico" />
+    <Content Include="Public\Imgs\Teams\spain\barcelona.ico" />
+    <Content Include="Public\Imgs\Teams\spain\celta_vigo.ico" />
+    <Content Include="Public\Imgs\Teams\spain\deportivo_alaves.ico" />
+    <Content Include="Public\Imgs\Teams\spain\deportivo_coruna.ico" />
+    <Content Include="Public\Imgs\Teams\spain\eibar.png" />
+    <Content Include="Public\Imgs\Teams\spain\espanyol.ico" />
+    <Content Include="Public\Imgs\Teams\spain\getafe.ico" />
+    <Content Include="Public\Imgs\Teams\spain\girona.png" />
+    <Content Include="Public\Imgs\Teams\spain\huesca.png" />
+    <Content Include="Public\Imgs\Teams\spain\las_palmas.ico" />
+    <Content Include="Public\Imgs\Teams\spain\leganes.png" />
+    <Content Include="Public\Imgs\Teams\spain\levante.png" />
+    <Content Include="Public\Imgs\Teams\spain\malaga.ico" />
+    <Content Include="Public\Imgs\Teams\spain\osasuna.ico" />
+    <Content Include="Public\Imgs\Teams\spain\rayo_vallecano.ico" />
+    <Content Include="Public\Imgs\Teams\spain\real_betis.ico" />
+    <Content Include="Public\Imgs\Teams\spain\real_mallorca.ico" />
+    <Content Include="Public\Imgs\Teams\spain\real_oviedo.ico" />
+    <Content Include="Public\Imgs\Teams\spain\real_radrid.ico" />
+    <Content Include="Public\Imgs\Teams\spain\real_sociedad.ico" />
+    <Content Include="Public\Imgs\Teams\spain\real_valladolid.ico" />
+    <Content Include="Public\Imgs\Teams\spain\real_zaragoza.ico" />
+    <Content Include="Public\Imgs\Teams\spain\sevilla.ico" />
+    <Content Include="Public\Imgs\Teams\spain\sporting_gijon.ico" />
+    <Content Include="Public\Imgs\Teams\spain\tenerife.ico" />
+    <Content Include="Public\Imgs\Teams\spain\valencia.ico" />
+    <Content Include="Public\Imgs\Teams\spain\villareal.ico" />
+    <Content Include="Public\Imgs\Users\songoku.png" />
+    <Content Include="Public\Imgs\Wizball\bg-min.jpg" />
+    <Content Include="Public\Imgs\Wizball\logo.png" />
+    <Content Include="Public\Imgs\Wizball\logo_dark.png" />
+    <Content Include="Public\Imgs\Wizball\logo_dark_ico.ico" />
+    <Content Include="Public\Imgs\Wizball\logo_dark_ico.png" />
+    <Content Include="Public\Imgs\Wizball\logo_green_ico.png" />
+    <Content Include="Public\Imgs\Wizball\logo_with_name.png" />
+    <Content Include="Public\Imgs\Users\user.png" />
+    <Content Include="Public\Imgs\Wizball\no.png" />
+    <Content Include="Public\Imgs\Wizball\yes.png" />
+    <Content Include="Public\Javascript\MasterView.js" />
+    <Content Include="Public\Javascript\MatchesTipsHistoryGrid.js" />
+    <Content Include="Public\Javascript\MatchesTipsGrid.js" />
+    <Content Include="Public\Javascript\ViewContactUs.js" />
+    <Content Include="Public\Javascript\ViewEditProfile.js" />
+    <Content Include="Public\Javascript\ViewLogin.js" />
+    <Content Include="Public\Javascript\ViewRecoverPassword.js" />
+    <Content Include="Public\Javascript\ViewRegistration.js" />
+    <Content Include="Public\jQuery\jQuery.min.js" />
+    <Content Include="Public\Styling\MasterView.css" />
+    <Content Include="Public\Styling\MatchesTipsHistoryGrid.css" />
+    <Content Include="Public\Styling\MatchesTipsGrid.css" />
+    <Content Include="Public\Styling\ViewAboutUs.css" />
+    <Content Include="Public\Styling\ViewContactUs.css" />
+    <Content Include="Public\Styling\ViewEditProfile.css" />
+    <Content Include="Public\Styling\ViewLogin.css" />
+    <Content Include="Public\Styling\ViewRecoverPassword.css" />
+    <Content Include="Public\Styling\ViewRegistration.css" />
+    <Content Include="Web.config" />
+    <Content Include="WizballWS.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pages\MasterView.Master.cs">
+      <DependentUpon>MasterView.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MasterView.Master.designer.cs">
+      <DependentUpon>MasterView.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ViewAboutUs.aspx.cs">
+      <DependentUpon>ViewAboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ViewAboutUs.aspx.designer.cs">
+      <DependentUpon>ViewAboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ViewContactUs.aspx.cs">
+      <DependentUpon>ViewContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ViewContactUs.aspx.designer.cs">
+      <DependentUpon>ViewContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ViewEditProfile.aspx.cs">
+      <DependentUpon>ViewEditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ViewEditProfile.aspx.designer.cs">
+      <DependentUpon>ViewEditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ViewHistoryTips.aspx.cs">
+      <DependentUpon>ViewHistoryTips.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ViewHistoryTips.aspx.designer.cs">
+      <DependentUpon>ViewHistoryTips.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ViewHome.aspx.cs">
+      <DependentUpon>ViewHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ViewHome.aspx.designer.cs">
+      <DependentUpon>ViewHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ViewLogin.aspx.cs">
+      <DependentUpon>ViewLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ViewLogin.aspx.designer.cs">
+      <DependentUpon>ViewLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ViewRecoverPassword.aspx.cs">
+      <DependentUpon>ViewRecoverPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ViewRecoverPassword.aspx.designer.cs">
+      <DependentUpon>ViewRecoverPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ViewRegistration.aspx.cs">
+      <DependentUpon>ViewRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ViewRegistration.aspx.designer.cs">
+      <DependentUpon>ViewRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Globals.cs" />
+    <Compile Include="Resources\MailSender.cs" />
+    <Compile Include="Resources\MatchesTipsHistoryGrid.cs" />
+    <Compile Include="Resources\MatchesTipsGrid.cs" />
+    <Compile Include="WizballWS.asmx.cs">
+      <DependentUpon>WizballWS.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\MasterView.Master" />
+    <None Include="packages.config" />
+    <Content Include="Public\Fontawesome\webfonts\fa-brands-400.eot" />
+    <Content Include="Public\Fontawesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="Public\Fontawesome\webfonts\fa-brands-400.woff" />
+    <Content Include="Public\Fontawesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="Public\Fontawesome\webfonts\fa-regular-400.eot" />
+    <Content Include="Public\Fontawesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="Public\Fontawesome\webfonts\fa-regular-400.woff" />
+    <Content Include="Public\Fontawesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="Public\Fontawesome\webfonts\fa-solid-900.eot" />
+    <Content Include="Public\Fontawesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="Public\Fontawesome\webfonts\fa-solid-900.woff" />
+    <Content Include="Public\Fontawesome\webfonts\fa-solid-900.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{e167f6af-ab58-46b0-a404-a2ad2d8cbd49}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64163</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64163/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

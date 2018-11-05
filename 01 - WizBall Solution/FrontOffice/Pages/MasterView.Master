@@ -1,0 +1,180 @@
+﻿<%@ Master
+    Language="C#"
+    AutoEventWireup="true"
+    CodeBehind="MasterView.Master.cs"
+    Inherits="FrontOffice.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>Wizball</title>
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="../Public/Imgs/Wizball/logo_dark_ico.ico" />
+
+
+    <!-- jQuery -->
+    <script src="../Public/jQuery/jQuery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="../Public/Bootstrap/Bootstrap4.css" rel="stylesheet" />
+
+    <!-- Fontawesome -->
+    <link href="../Public/Fontawesome/css/all.min.css" rel="stylesheet" />
+
+    <!-- MasterView CSS Styling -->
+    <link href="../Public/Styling/MasterView.css" rel="stylesheet" />
+
+
+    <asp:ContentPlaceHolder ID="masterViewContentHead" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+
+        <!-- Opacity background -->
+        <div id="background">
+        </div>
+
+
+        <!-- Modal logout -->
+        <div id="outter-modal" class="outter-modal">
+
+            <div id="inner-modal">
+
+                <div id="modal-header">
+                    <a href="/Pages/ViewHome.aspx">
+                        <img id="modal-logo" src="/Public/Imgs/Wizball/logo_dark.png" />
+                    </a>
+                </div>
+
+
+                <div id="modal-message">
+                    <p id="modal-primary-message">Logout confirmation</p>
+                </div>
+
+                
+                <div id="modal-footer">
+     
+                    <a id="btnModalCancel" class="btn btn-danger btn-sm modal-btn"><i class="fas fa-undo"></i> Cancel</a>        
+                    <asp:LinkButton ID="btnModalConfirm" runat="server"  CssClass="btn btn-success btn-sm modal-btn" OnClick="Logout_Click"><i class="fas fa-check"></i> Confirm</asp:LinkButton>
+               
+                </div>
+                
+            </div>
+
+        </div>
+
+
+
+        <!-- Big screen menus panel -->
+        <header id="app-header">
+
+            <!-- Logo and humbuger panel -->
+            <div class="logo-menu">
+
+                <a href="/Pages/ViewHome.aspx">
+                    <img src="/Public/Imgs/Wizball/logo_dark.png" alt="wizballlogo" /></a>
+
+                <i id="humburger" class="fas fa-bars fa-1x"></i>
+
+            </div>
+
+
+            <!-- Menus panel -->
+            <div class="dektop-menu-menus">
+
+                <a runat="server" id="linkHome" href="/Pages/ViewHome.aspx"><i class="fas fa-futbol"></i> Tips</a>
+
+                <a runat="server" id="linkTipsHistory" href="/Pages/ViewHistoryTips.aspx"><i class="fas fa-history"></i> Tips History</a>
+
+                <a runat="server" id="linkAboutUs" href="/Pages/ViewAboutUs.aspx"><i class="fas fa-info-circle"></i> About Us</a>
+
+                <a runat="server" id="linkContactUs" href="/Pages/ViewContactUs.aspx"><i class="fas fa-at"></i> Contact Us</a>
+
+            </div>
+
+
+            <!-- USER PANEL -->
+            <div class="dektop-menu-user">
+
+                <div class="dektop-menu-user-pic">
+
+                    <img src="" alt="user pic" id="imgUserPic" runat="server">
+                </div>
+
+                <div class="dektop-menu-user-options" id="divDesktopMenuUserOptions" runat="server">
+
+                    <!-- Dinamically Generated Menus -->
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- SMALL SCREEN MENUS PANEL -->
+        <nav id="responsive-menu" class="responsive-menu">
+
+            <!-- USER MENU PANAL -->
+            <div class="menu-user">
+
+                <div class="menu-user-pic">
+
+                    <img src="" alt="user pic" id="imgUserPicResp" runat="server">
+                </div>
+
+                <div class="menu-user-options" id="divDesktopMenuUserOptionsResp" runat="server">
+
+                    <!-- Dinamically Generated Menus -->
+
+                </div>
+
+            </div>
+
+            <!-- PAGE MENUS PANEL -->
+            <div class="menu-menus">
+
+                <a href="/Pages/ViewAboutUs.aspx"><i class="fas fa-info-circle"></i> About Us</a>
+
+                <a href="/Pages/ViewContactUs.aspx"><i class="fas fa-at"></i> Contact Us</a>
+
+                <a href="/Pages/ViewHistoryTips.aspx"><i class="fas fa-history"></i> Tips History</a>
+
+                <a href="/Pages/ViewHome.aspx"><i class="fas fa-futbol"></i> Tips</a>
+
+            </div>
+
+        </nav>
+
+
+
+
+        <!-- Slave page -->
+        <asp:ContentPlaceHolder ID="masterViewContentBody" runat="server">
+        </asp:ContentPlaceHolder>
+
+
+
+
+        <!-- Master page javascript -->
+        <script src="../Public/Javascript/MasterView.js"></script>
+
+        <!-- Slave page javascript -->
+        <asp:ContentPlaceHolder ID="masterViewContentJavascript" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+IMPORTANT 1 - Quando editar, verificar se 
+o admin colocou um user ou email que ja 
+existam na db. Verificar também se foi 
+um email válido.
+- Username maximo 50 
+- Emial maximo 100
+
+-----------DONE--------------23:04 28/09/201823:05 28/09/2018
+
+IMPORTANT  2 - Acabar verificação do que 
+foi editado para chamar um metodo com 
+user ou user history ou apenas user
+
+-----------DONE--------------14:57 29/09/201814:58 29/09/2018
+
+7 - Live import photo e validação do form para as fotos
+
+4 - Tratar das imagens do users.
+IMPORTANT 5 - Ordenar ao carregar nas th
+
+IMPORTANT 6 - Pesquisar e filtrar users
+
+-----------DONE--------------01:29 01/10/201801:30 01/10/2018
+
+3 - Tratar da paginação. Das duas um, 
+ou coloco a paginação direita ou coloco 
+todos os users  dentro da tabela como 
+estão os jogos na app principal.
+
+IMPORTANT 9 - Botão de grant/revoke 
+all user requests.
+
+VERIFICAR -- 8 - Tamanho minímo a tabela 
+
+-----------DONE--------------23:19 03/10/201823:20 03W/10/2018
+
+IDEIA Quando carregar na foto da team aparecer a foto em grande no ecra numa espécie de visualizador.

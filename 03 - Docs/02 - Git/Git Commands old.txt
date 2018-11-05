@@ -1,0 +1,53 @@
+﻿============= .gitignore ============================================================================
+
+ 	- .gitignore 					(ignora todos os ficheiros e pastas aqui discriminados)
+
+============= Help & Configs ========================================================================
+
+	- git config help				(ajuda)
+	- git help --config				(ajuda)
+	
+	- git --version					(verifica a versão do git instalada)
+
+	- git config --global user.name  "nome"		(define o nome do utilizador)
+	- git config --global user.email "mail"		(define o mail do utilizador)
+	- git config --list				(lista as configurações do git)
+
+============= Workplace to Remote ===================================================================
+
+	- git init					(inicializa o git)
+
+	- git add file_name				(adiciona à staging area o ficheiro especificado)
+	- git add .  					(adiciona tudo à staging area)
+	- git add -A 					(adiciona tudo à staginf area ??mas apenas o que tiver alterações??)
+
+	- git rm --cached . -r 				(remove ??recursivamente?? tudo o que estiver em na staging area)
+	- git reset file_name				(remove o ficheiro especificado da staging area)
+	- git reset 					(??retira tudo da staging area??)
+
+	- git commit -m "Innitial Commit"		(faz o commit para o repo local)
+
+	- git remote add origin url 			(para indicar o remote repo)
+	- git pull origin master			(antes de realizar o push para o remote repo deve-se actualizar o nosso repo local)
+	- git remote -v					?????
+
+	- git push -u origin master
+	- git push
+	- git pull
+
+	- git diff					(mostra alterações nos ficheiros)	
+	- git status					(??mostra que ficheiros sofreram alterações??)
+	- git log					(?? mostra os logs dos commits para determinado branch??)
+
+============= Remote To Workplace ===================================================================	
+
+	- git clone url (para sacar um projecto já existente)
+	
+============= Branchs & Merges ======================================================================	
+
+	- git branch -a					(info sobre as branchs)	
+	- git branch 					(lista todas as branchs disponiveis)
+	- git branch branch_name			(cria uma nova branch)
+	- git checkout branch_name			(muda para a branch especificada)
+	- git branch -d branch_name			(elimina um determinado branch do local repo)
+	- git push origin --delete branch_name		(elimina um determinado branch do remote repo)

@@ -1,0 +1,50 @@
+
+	Wizball Setup
+
+
+		- Preparar a base de dados:
+
+			. Entrar na pasta 03 - SQL Scripts e correr apenas os seguintes scripts pela ordem indicada.
+			. 00 - DDL  - WizBall (Create Database).sql
+			. 01 - DDL  - WizBall (Create Stored Procedures Full).sql
+			. 02 - DML  - WizBall (Insert Initial Values).sql
+
+		
+		- Adicionar a connection string (Já no projeto).
+
+			. Entrar no Web.config do Front Office e do Back Office.
+			. Adicionar a connection string.
+
+
+		- Alterar o nome das chamadas à connection string (Já no projeto).
+
+			. Abrir a pasta do Front Office.
+			. Abrir a past Resources.
+			. Abrir o ficheiro Globals.cs
+			. Alterar o nome da connection string no método [[ public BLL CreateBll() ]]
+
+			. Abrir a pasta do Back Office.
+			. Abrir o ficheiro WebService.asmx
+ 			.. Alterar o nome da connection string no método [[ public class WebService : System.Web.Services.WebService ]]
+
+
+		- Correr a primeira sincronização com a API (Nada vai funcionar se não for realizado este passo)
+
+			. Correr a página Login do Back Office.
+			. Entrar com o login 
+				User: wizball
+				Pass: tpsi1017
+			. Ir ao separador Data Managment.(Aqui vai ser informado da necessidade de se realizar um Full Sync), deve aceitar.
+			. Este processo demora sensivelmente 2:30m.
+		
+
+		- Realizar update aos icons das teams/competitions 
+			
+			. Entrar na pasta 03 - SQL Scripts e correr apenas o seguinte script.
+			. 03 - DML - WizBall (Update Flags).sql
+
+		
+
+
+	Neste momento a aplicação está pronta para ser usada.
+		

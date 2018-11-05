@@ -1,0 +1,365 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+header {
+    padding: 5px 10px;
+    color: #333;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* SMALL SCREENS ****************************************************************************************/
+
+/* MODAL LOGOUT */
+#outter-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+#inner-modal {
+    background-color: #fff;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 70%;
+    border-radius: 4px;
+}
+
+
+#modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding-bottom: 6px;
+}
+#modal-logo {
+    height: 25px;
+}
+
+
+#modal-message {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+#modal-primary-message {
+    font-size:11px;
+    text-align: center;
+    margin:0;
+    padding:20px 0;
+}
+
+
+#modal-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-btn {
+    width: 100px;
+    min-width:70px;
+    margin: 30px 15px 0 15px;
+    color: white !important;
+    font-size:10px;
+}
+/* MODAL LOGOUT */
+
+
+
+
+header .logo-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 1px;
+}
+header .logo-menu a {
+    height: 25px;
+}
+header .logo-menu a img {
+    height: 25px;
+}
+header .logo-menu i {
+    color: #333;
+}
+
+
+/* RESTANTES COMPONENTES DO HEADER QUE SÓ APARECEM QUANDO VIEWPORT WIDTH MAIOR QUE 1060px */
+body header .dektop-menu-menus, body header .dektop-menu-user {
+    display: none;
+}
+
+
+.responsive-menu {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    overflow: hidden;
+    border-top: 2px solid #333;
+    height: 0;
+}
+.responsive-menu-open {
+    padding: 10px 15px;
+    height: auto;
+}
+
+
+.responsive-menu .menu-user {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.responsive-menu .menu-user-pic {
+    flex: 1 1 50px;
+    align-self: center;
+    text-align: right;
+}
+.responsive-menu .menu-user-pic img {
+    width: 70px;
+    border-radius: 8px;    
+    background-color:white;
+}
+.responsive-menu .menu-user-options {
+    flex: 1 1 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.responsive-menu .menu-user-options a {
+    padding: 6px 15px;
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+
+.responsive-menu .menu-menus {
+    padding: 5px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.responsive-menu .menu-menus a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: yellowgreen;
+}
+/* SMALL SCREENS */
+
+
+
+
+/* SCREENS BIGGER THAN 960px */
+@media only screen and (min-width:960px) {
+
+
+
+#background {
+    position:absolute;
+    z-index:-1;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Public/Imgs/Wizball/bg-min.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.5;
+}
+
+
+
+/* MODAL LOGOUT */
+#inner-modal {
+    background-color: #fff;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 4px;
+}
+
+
+#modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding-bottom: 6px;
+}
+#modal-logo {
+    height: 30px;
+}
+
+
+#modal-message {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 15px;
+}
+#modal-primary-message {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    padding: 50px 0;
+}
+
+
+#modal-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-btn {
+    width: 200px;
+    min-width: 100px;
+    margin: 30px 30px 0 30px;
+    color: white !important;
+    font-size: 15px;
+}
+/* MODAL LOGOUT */
+
+
+
+
+
+
+
+/* Humburger */
+.logo-menu i {
+    display: none;
+}
+
+/* Menu small devices */
+.responsive-menu {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border:none;
+}
+
+/* RESTANTES COMPONENTES DO HEADER VOLTAM APARECE QUANDO VIEWPORT WIDTH MAIOR QUE 1060px */
+body header .dektop-menu-menus, body header .dektop-menu-user {
+    display: flex;
+}
+
+header {
+    padding: 10px 30px;
+}
+
+header .logo-menu a {
+    height: 60px;
+}
+header .logo-menu a img {
+    height: 60px;
+}
+
+
+.dektop-menu-menus {
+    flex: 1 1 1px;
+
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+}
+.dektop-menu-menus a {
+    padding: 0 12px;
+    font-size: 13px;
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+        
+    margin:0 4px;
+    position: relative;
+}
+.dektop-menu-menus a::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: yellowgreen;
+    content: "";
+    transform:scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+}
+.dektop-menu-menus a::before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: yellowgreen;
+    content: "";
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+.dektop-menu-menus a:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+.dektop-menu-menus a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+.active-menu::after {
+    background-color: #555 !important;
+    transform: scaleX(1) !important;
+}
+.active-menu::before {
+    background-color: #555 !important;
+    transform: scaleX(0) !important;
+}
+
+.dektop-menu-user {
+        flex: 1 1 1px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+.dektop-menu-user .dektop-menu-user-pic img {
+height: 70px;
+border-radius: 15px;
+}
+.dektop-menu-user .dektop-menu-user-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 11px;
+
+    min-width:136px;
+}
+.dektop-menu-user .dektop-menu-user-options a {
+    font-size: 10px;
+    color: #333;
+    text-decoration: none;
+    padding: 4px 0 4px 25px;
+    display: inline-block;
+    white-space: nowrap;
+}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+bruno.ferreira.t0110407@edu.atec.pt
+fulldb string + int

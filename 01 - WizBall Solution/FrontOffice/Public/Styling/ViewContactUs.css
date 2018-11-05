@@ -1,0 +1,172 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.form-wrapper {
+    width: 100%;
+    display:flex;
+    justify-content:center;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 10px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.form-header img {
+        height: 30px;
+    }
+
+.form-body {
+    border-radius: 3px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.8);
+    padding: 30px;
+    width:960px;
+    max-width:960px;
+}
+
+.form-body h5 {
+        color: yellowgreen;
+        align-self: flex-end;
+        margin: 0;
+    }
+
+.form-textarea {
+    min-height: 32px;
+    max-height: calc(10*32px);
+}
+
+hr {
+    border: solid 1px white;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.form-groups {
+    width: 100%;
+    margin-bottom: 25px;
+    height: auto;
+}
+
+.form-body .form-imputs-labels {
+    color: white;
+    margin: 0;
+    font-size: 12px;
+    color: yellowgreen;
+    font-weight:100;
+}
+
+.form-body .form-inputs {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.status {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.form-attachment {
+    margin: 30px 0 auto 0;
+    align-self: flex-end;
+}
+.form-submit {
+   
+    padding: 3px 0;
+    width: 200px; 
+    font-size: 12px;
+    font-weight: 100;
+
+}
+
+
+
+
+
+@media only screen and (min-width:960px) {
+
+    .sub-groups-50 {
+        width: -webkit-fill-available !important;
+    }
+    
+    .sub-groups-att {
+        width: max-content !important;
+    }
+
+    .sbcont {
+        display: inline-flex;
+        width: -webkit-fill-available !important;
+    }
+
+    .spacer {
+        width: 10px;
+    }
+
+    .form-body {
+        margin: 60px;
+        padding: 40px;
+    }
+
+    .form-body .form-imputs-labels {
+        font-size: 15px;
+    }
+
+    .form-submit {
+        font-size: 15px;
+    }
+
+    .form-body .form-inputs {
+        font-size: 15px;
+    }
+
+    .status {
+        display: inline-block;
+        font-size: 15px;
+    }
+}
+
+
+#attachmentInp {
+    display: none;
+}
+
+.customFileUpload {
+    padding: 0 30px;
+}
+
+#upload-status {
+    font-size: 11px;
+    color: orange;
+}
+
+#btnCustomFileUpload {
+    width: 100%;
+    border: none;
+    color: yellowgreen;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 3px;
+    padding: 5px 50px;
+    display: block;
+    color: #666;
+}
+
+.ast {
+    color: orange;
+}

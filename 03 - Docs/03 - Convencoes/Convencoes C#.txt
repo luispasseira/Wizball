@@ -1,0 +1,98 @@
+----------------------------------------------------------------------------------------------------------------------------
+
+	- Nome de classes.
+	
+		- Pascal Case.
+		- Singular.
+		- Inglês.
+	
+		ex: Person. 
+		    Account.
+		    Contact.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+	- Nome de métodos e os seus parâmetros.
+
+		- Pascal Case.
+		- Singular.
+		- Inglês.
+		- Nomes dos argumentos devem ser iguais ao nome do tipo dos parâmetros (caso os argumentos sejam classes).
+
+		ex: GetAccountBalance(UserAccount UserAccount).
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+	- Nome das propriedades.
+
+		- Pascal Case.
+		- Inglês.
+
+		ex: property string 	Name.
+		    property DateTime   Age.
+		    
+-----------------------------------------------------------------------------------------------------------------------------
+
+	- Nome dos atributos.
+
+		- Camel Case.
+		- Inglês.
+
+		ex: string   name.
+		    DateTime age.		    
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+			 
+	- Nome de variáveis.
+
+		- Camel Case.
+		- Inglês.
+		
+		ex: balance.
+		    personName.
+
+-----------------------------------------------------------------------------------------------------------------------------
+	
+	- Nomes de constantes e enums.
+
+		- Upper Case.
+		- Inglês.
+	        - Nomes separados por _.
+
+		ex: public const double PI 	     = 3,14159265359
+		    public const string FLAGS_FOLDER = "imgs/flags"
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+	- Nome de interfaces.
+
+		- Pascal Case.
+		- Inglês.
+		- Colocar sempre um "I" antes do nome da interface.
+
+		ex: IPerson.
+		    IContact.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

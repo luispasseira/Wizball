@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Sistema de prognósticos de apostas desportivas" company="ATEC" webLink="http://" view-date="2018-08-09" view-index="0" gantt-divider-location="1" resource-divider-location="300" version="2.8.9" locale="en_US">
+    <description><![CDATA[Projecto final TPSI_10.17]]></description>
+    <view zooming-state="default:3" id="gantt-chart">
+        <field id="tpd11" name="Outline number" width="15" order="0"/>
+        <field id="tpd3" name="Name" width="15" order="1"/>
+        <field id="tpc0" name="WBS" width="15" order="2"/>
+        <field id="tpd4" name="Begin date" width="15" order="3"/>
+        <field id="tpd5" name="End date" width="15" order="4"/>
+        <field id="tpd10" name="ID" width="15" order="5"/>
+        <field id="tpd9" name="Predecessors" width="15" order="6"/>
+        <field id="tpd6" name="Duration" width="15" order="7"/>
+        <field id="tpd7" name="Completion" width="15" order="8"/>
+        <option id="color.recent"><![CDATA[#66ff33 #ff0000 #ff33ff #00cccc #ff6699 #ff9900 #ff6600 #cccc00 #9999ff #0066ff]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars base-id="none">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="2018" month="10" date="5" type="HOLIDAY"/>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+            <taskproperty id="tpc0" name="WBS" type="custom" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="SPAD" color="#000000" meeting="false" start="2018-07-02" duration="83" complete="37" thirdDate="2018-07-16" thirdDate-constraint="0" expand="true">
+            <customproperty taskproperty-id="tpc0" value="E"/>
+            <task id="1115" name="Análise de Sistemas" color="#66ff33" meeting="false" start="2018-07-02" duration="10" complete="100" thirdDate="2018-07-02" thirdDate-constraint="0" expand="false">
+                <depend id="439" type="2" difference="0" hardness="Strong"/>
+                <customproperty taskproperty-id="tpc0" value="PT"/>
+                <task id="1117" name="Levantamento de Requisitos" color="#8cb6ce" meeting="false" start="2018-07-02" duration="1" complete="100" thirdDate="2018-07-02" thirdDate-constraint="0" expand="true">
+                    <depend id="1120" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="T"/>
+                </task>
+                <task id="1120" name="Use Cases" color="#8cb6ce" meeting="false" start="2018-07-03" duration="1" complete="100" thirdDate="2018-06-25" thirdDate-constraint="0" expand="true">
+                    <depend id="1137" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="T"/>
+                </task>
+                <task id="1137" name="Descrição Estruturada" color="#8cb6ce" meeting="false" start="2018-07-04" duration="1" complete="100" thirdDate="2018-06-25" thirdDate-constraint="0" expand="true">
+                    <depend id="1126" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="T"/>
+                </task>
+                <task id="1126" name="Modelo Dados" color="#8cb6ce" meeting="false" start="2018-07-05" duration="1" complete="100" thirdDate="2018-06-25" thirdDate-constraint="0" expand="true">
+                    <depend id="1131" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="T"/>
+                </task>
+                <task id="1131" name="Modelo E-R" color="#8cb6ce" meeting="false" start="2018-07-06" duration="1" complete="100" thirdDate="2018-06-25" thirdDate-constraint="0" expand="true">
+                    <depend id="1134" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="T"/>
+                </task>
+                <task id="1134" name="Dicionário de Dados" color="#8cb6ce" meeting="false" start="2018-07-09" duration="1" complete="100" thirdDate="2018-06-25" thirdDate-constraint="0" expand="true">
+                    <depend id="1150" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="T"/>
+                </task>
+                <task id="1150" name="Diagrama de Classes" color="#8cb6ce" meeting="false" start="2018-07-10" duration="1" complete="100" thirdDate="2018-06-25" thirdDate-constraint="0" expand="true">
+                    <depend id="1148" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="T"/>
+                </task>
+                <task id="1148" name="Diagrama de Contexto" color="#8cb6ce" meeting="false" start="2018-07-11" duration="1" complete="100" thirdDate="2018-06-25" thirdDate-constraint="0" expand="true">
+                    <depend id="1149" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="T"/>
+                </task>
+                <task id="1149" name="Diagrama de Fluxo de Dados" color="#8cb6ce" meeting="false" start="2018-07-12" duration="1" complete="100" thirdDate="2018-06-25" thirdDate-constraint="0" expand="true">
+                    <depend id="1160" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="T"/>
+                </task>
+                <task id="1160" name="Diagrama de Sequência" color="#8cb6ce" meeting="false" start="2018-07-13" duration="1" complete="100" thirdDate="2018-06-25" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="T"/>
+                </task>
+            </task>
+            <task id="439" name="Bussines Logic" color="#ff0000" meeting="false" start="2018-07-16" duration="35" complete="83" thirdDate="2018-07-16" thirdDate-constraint="0" expand="false">
+                <customproperty taskproperty-id="tpc0" value="PT"/>
+                <task id="440" name="Implementar Base de Dados" color="#cc99ff" meeting="false" start="2018-07-16" duration="4" complete="60" thirdDate="2018-05-01" thirdDate-constraint="0" expand="false">
+                    <customproperty taskproperty-id="tpc0" value="PT"/>
+                    <task id="442" name="Criar Modelo de Dados" color="#8cb6ce" meeting="false" start="2018-07-16" duration="1" complete="100" thirdDate="2018-05-01" thirdDate-constraint="0" expand="true">
+                        <depend id="441" type="2" difference="0" hardness="Strong"/>
+                        <depend id="447" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="441" name="Desenvolver Base de Dados" color="#8cb6ce" meeting="false" start="2018-07-17" duration="1" complete="100" thirdDate="2018-05-01" thirdDate-constraint="0" expand="true">
+                        <depend id="443" type="2" difference="0" hardness="Strong"/>
+                        <depend id="444" type="2" difference="0" hardness="Strong"/>
+                        <depend id="446" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="443" name="Actualizar Flags ( Team/Competitions/Markets )" color="#8cb6ce" meeting="false" start="2018-07-18" duration="2" complete="20" thirdDate="2018-07-09" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="PT"/>
+                        <task id="444" name="Pesquisar Flags" color="#8cb6ce" meeting="false" start="2018-07-18" duration="1" complete="20" thirdDate="2018-07-18" thirdDate-constraint="0" expand="true">
+                            <depend id="445" type="2" difference="0" hardness="Strong"/>
+                            <customproperty taskproperty-id="tpc0" value="T"/>
+                        </task>
+                        <task id="445" name="Realizar Updates na Base de Dados" color="#8cb6ce" meeting="false" start="2018-07-19" duration="1" complete="20" thirdDate="2018-07-18" thirdDate-constraint="0" expand="true">
+                            <customproperty taskproperty-id="tpc0" value="T"/>
+                        </task>
+                    </task>
+                </task>
+                <task id="446" name="Implementar Entity Classes" color="#009999" meeting="false" start="2018-07-18" duration="13" complete="100" thirdDate="2018-07-04" thirdDate-constraint="0" expand="false">
+                    <depend id="460" type="2" difference="0" hardness="Strong"/>
+                    <depend id="461" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="PT"/>
+                    <task id="447" name="Criar Interface Entity" color="#8cb6ce" meeting="false" start="2018-07-18" duration="1" complete="100" thirdDate="2018-07-17" thirdDate-constraint="0" expand="true">
+                        <depend id="448" type="2" difference="0" hardness="Strong"/>
+                        <depend id="463" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="448" name="Criar Entity User" color="#8cb6ce" meeting="false" start="2018-07-19" duration="1" complete="100" thirdDate="2018-07-17" thirdDate-constraint="0" expand="true">
+                        <depend id="449" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="449" name="Criar Entity UserHistory" color="#8cb6ce" meeting="false" start="2018-07-20" duration="1" complete="100" thirdDate="2018-07-17" thirdDate-constraint="0" expand="true">
+                        <depend id="450" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="450" name="Criar Entity UserState" color="#8cb6ce" meeting="false" start="2018-07-23" duration="1" complete="100" thirdDate="2018-07-17" thirdDate-constraint="0" expand="true">
+                        <depend id="451" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="451" name="Criar Entity Admin" color="#8cb6ce" meeting="false" start="2018-07-24" duration="1" complete="100" thirdDate="2018-07-17" thirdDate-constraint="0" expand="true">
+                        <depend id="452" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="452" name="Criar Entity Area" color="#8cb6ce" meeting="false" start="2018-07-25" duration="1" complete="100" thirdDate="2018-07-17" thirdDate-constraint="0" expand="true">
+                        <depend id="453" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="453" name="Criar Entity Season" color="#8cb6ce" meeting="false" start="2018-07-26" duration="1" complete="100" thirdDate="2018-07-17" thirdDate-constraint="0" expand="true">
+                        <depend id="454" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="454" name="Criar Entity Competiton" color="#8cb6ce" meeting="false" start="2018-07-27" duration="1" complete="100" thirdDate="2018-07-17" thirdDate-constraint="0" expand="true">
+                        <depend id="455" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="455" name="Criar Entity Match" color="#8cb6ce" meeting="false" start="2018-07-30" duration="1" complete="100" thirdDate="2018-07-17" thirdDate-constraint="0" expand="true">
+                        <depend id="456" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="456" name="Criar Entity Team" color="#8cb6ce" meeting="false" start="2018-07-31" duration="1" complete="100" thirdDate="2018-07-17" thirdDate-constraint="0" expand="true">
+                        <depend id="457" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="457" name="Criar Entity Tip" color="#8cb6ce" meeting="false" start="2018-08-01" duration="1" complete="100" thirdDate="2018-07-17" thirdDate-constraint="0" expand="true">
+                        <depend id="458" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="458" name="Criar Entity Market" color="#8cb6ce" meeting="false" start="2018-08-02" duration="1" complete="100" thirdDate="2018-07-17" thirdDate-constraint="0" expand="true">
+                        <depend id="459" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="459" name="Criar Entity Newsletter" color="#8cb6ce" meeting="false" start="2018-08-03" duration="1" complete="100" thirdDate="2018-07-17" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                </task>
+                <task id="460" name="Implementar API Football-Data.org" color="#99cc00" meeting="false" start="2018-08-06" duration="5" complete="100" thirdDate="2018-07-04" thirdDate-constraint="0" expand="false">
+                    <depend id="466" type="2" difference="0" hardness="Strong"/>
+                    <depend id="467" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="PT"/>
+                    <task id="461" name="Criar Abstract Class Resource" color="#8cb6ce" meeting="false" start="2018-08-06" duration="1" complete="100" thirdDate="2018-08-03" thirdDate-constraint="0" expand="true">
+                        <depend id="462" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="462" name="Criar Resource Areas" color="#8cb6ce" meeting="false" start="2018-08-07" duration="1" complete="100" thirdDate="2018-08-03" thirdDate-constraint="0" expand="true">
+                        <depend id="463" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="463" name="Criar Resource Competitions" color="#8cb6ce" meeting="false" start="2018-08-08" duration="1" complete="100" thirdDate="2018-08-03" thirdDate-constraint="0" expand="true">
+                        <depend id="464" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="464" name="Criar Resource Matches" color="#8cb6ce" meeting="false" start="2018-08-09" duration="1" complete="100" thirdDate="2018-08-03" thirdDate-constraint="0" expand="true">
+                        <depend id="465" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="465" name="Criar Resources Teams" color="#8cb6ce" meeting="false" start="2018-08-10" duration="1" complete="100" thirdDate="2018-08-03" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                </task>
+                <task id="466" name="Implementar Data Access Layer" color="#66ff66" meeting="false" start="2018-08-13" duration="13" complete="80" thirdDate="2018-07-24" thirdDate-constraint="0" expand="false">
+                    <customproperty taskproperty-id="tpc0" value="PT"/>
+                    <task id="467" name="Criar Abstract Class DAL" color="#8cb6ce" meeting="false" start="2018-08-13" duration="1" complete="100" thirdDate="2018-08-10" thirdDate-constraint="0" expand="true">
+                        <depend id="468" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="468" name="Criar Class DalUsers" color="#8cb6ce" meeting="false" start="2018-08-14" duration="1" complete="100" thirdDate="2018-08-10" thirdDate-constraint="0" expand="true">
+                        <depend id="469" type="2" difference="0" hardness="Strong"/>
+                        <depend id="481" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="469" name="Criar Class DalAdmins" color="#8cb6ce" meeting="false" start="2018-08-15" duration="1" complete="100" thirdDate="2018-08-10" thirdDate-constraint="0" expand="true">
+                        <depend id="470" type="2" difference="0" hardness="Strong"/>
+                        <depend id="482" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="470" name="Criar Class DalAreas" color="#8cb6ce" meeting="false" start="2018-08-16" duration="1" complete="100" thirdDate="2018-08-10" thirdDate-constraint="0" expand="true">
+                        <depend id="471" type="2" difference="0" hardness="Strong"/>
+                        <depend id="483" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="471" name="Criar Class DalCompetitions" color="#8cb6ce" meeting="false" start="2018-08-17" duration="1" complete="100" thirdDate="2018-08-10" thirdDate-constraint="0" expand="true">
+                        <depend id="472" type="2" difference="0" hardness="Strong"/>
+                        <depend id="484" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="472" name="Criar Class DalSeasons" color="#8cb6ce" meeting="false" start="2018-08-20" duration="1" complete="100" thirdDate="2018-08-10" thirdDate-constraint="0" expand="true">
+                        <depend id="473" type="2" difference="0" hardness="Strong"/>
+                        <depend id="485" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="473" name="Criar Class DalMatches" color="#8cb6ce" meeting="false" start="2018-08-21" duration="1" complete="100" thirdDate="2018-08-10" thirdDate-constraint="0" expand="true">
+                        <depend id="474" type="2" difference="0" hardness="Strong"/>
+                        <depend id="486" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="474" name="Criar Class DalTeams" color="#8cb6ce" meeting="false" start="2018-08-22" duration="1" complete="100" thirdDate="2018-08-10" thirdDate-constraint="0" expand="true">
+                        <depend id="475" type="2" difference="0" hardness="Strong"/>
+                        <depend id="487" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="475" name="Criar Class DalUserHistory" color="#8cb6ce" meeting="false" start="2018-08-23" duration="1" complete="100" thirdDate="2018-08-10" thirdDate-constraint="0" expand="true">
+                        <depend id="476" type="2" difference="0" hardness="Strong"/>
+                        <depend id="488" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="476" name="Criar Class DalUserStates" color="#8cb6ce" meeting="false" start="2018-08-24" duration="1" complete="100" thirdDate="2018-08-10" thirdDate-constraint="0" expand="true">
+                        <depend id="477" type="2" difference="0" hardness="Strong"/>
+                        <depend id="489" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="477" name="Criar Class DalTips" color="#8cb6ce" meeting="false" start="2018-08-27" duration="1" complete="40" thirdDate="2018-08-10" thirdDate-constraint="0" expand="true">
+                        <depend id="478" type="2" difference="0" hardness="Strong"/>
+                        <depend id="490" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="478" name="Criar Class DalMarkets" color="#8cb6ce" meeting="false" start="2018-08-28" duration="1" complete="0" thirdDate="2018-08-10" thirdDate-constraint="0" expand="true">
+                        <depend id="479" type="2" difference="0" hardness="Strong"/>
+                        <depend id="491" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="479" name="Criar Class DalNewsletters" color="#8cb6ce" meeting="false" start="2018-08-29" duration="1" complete="0" thirdDate="2018-08-10" thirdDate-constraint="0" expand="true">
+                        <depend id="492" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                </task>
+                <task id="480" name="Implementar Bussiness Logic Layer" color="#0033cc" meeting="false" start="2018-08-15" duration="12" complete="78" thirdDate="2018-07-09" thirdDate-constraint="0" expand="false">
+                    <depend id="777" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="PT"/>
+                    <task id="481" name="Expor Métodos DalUsers" color="#8cb6ce" meeting="false" start="2018-08-15" duration="1" complete="100" thirdDate="2018-06-25" thirdDate-constraint="0" expand="true">
+                        <depend id="494" type="2" difference="0" hardness="Strong"/>
+                        <depend id="517" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="482" name="Expor Métodos DalAdmins" color="#8cb6ce" meeting="false" start="2018-08-16" duration="1" complete="100" thirdDate="2018-07-09" thirdDate-constraint="0" expand="true">
+                        <depend id="495" type="2" difference="0" hardness="Strong"/>
+                        <depend id="532" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="483" name="Expor Métodos DalAreas" color="#8cb6ce" meeting="false" start="2018-08-17" duration="1" complete="100" thirdDate="2018-07-09" thirdDate-constraint="0" expand="true">
+                        <depend id="496" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="484" name="Expor Métodos DalCompetitions" color="#8cb6ce" meeting="false" start="2018-08-20" duration="1" complete="100" thirdDate="2018-07-09" thirdDate-constraint="0" expand="true">
+                        <depend id="497" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="485" name="Expor Métodos DalSeasons" color="#8cb6ce" meeting="false" start="2018-08-21" duration="1" complete="100" thirdDate="2018-07-09" thirdDate-constraint="0" expand="true">
+                        <depend id="498" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="486" name="Expor Métodos DalMatches" color="#8cb6ce" meeting="false" start="2018-08-22" duration="1" complete="100" thirdDate="2018-07-09" thirdDate-constraint="0" expand="true">
+                        <depend id="499" type="2" difference="0" hardness="Strong"/>
+                        <depend id="542" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="487" name="Expor Métodos DalTeams" color="#8cb6ce" meeting="false" start="2018-08-23" duration="1" complete="100" thirdDate="2018-07-09" thirdDate-constraint="0" expand="true">
+                        <depend id="500" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="488" name="Expor Métodos DalUserHistory" color="#8cb6ce" meeting="false" start="2018-08-24" duration="1" complete="100" thirdDate="2018-07-09" thirdDate-constraint="0" expand="true">
+                        <depend id="501" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="489" name="Expor Métodos DalUserStates" color="#8cb6ce" meeting="false" start="2018-08-27" duration="1" complete="100" thirdDate="2018-07-09" thirdDate-constraint="0" expand="true">
+                        <depend id="502" type="2" difference="0" hardness="Strong"/>
+                        <depend id="728" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="490" name="Expor Métodos DalTips" color="#8cb6ce" meeting="false" start="2018-08-28" duration="1" complete="40" thirdDate="2018-06-18" thirdDate-constraint="0" expand="true">
+                        <depend id="503" type="2" difference="0" hardness="Strong"/>
+                        <depend id="648" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="491" name="Expor Métodos DalMarkets" color="#8cb6ce" meeting="false" start="2018-08-29" duration="1" complete="0" thirdDate="2018-06-18" thirdDate-constraint="0" expand="true">
+                        <depend id="504" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="492" name="Expor Métodos DalNewsletters" color="#8cb6ce" meeting="false" start="2018-08-30" duration="1" complete="0" thirdDate="2018-06-18" thirdDate-constraint="0" expand="true">
+                        <depend id="505" type="2" difference="0" hardness="Strong"/>
+                        <depend id="758" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                </task>
+                <task id="493" name="Implementar Web Services" color="#cccc00" meeting="false" start="2018-08-16" duration="12" complete="78" thirdDate="2018-08-08" thirdDate-constraint="0" expand="false">
+                    <customproperty taskproperty-id="tpc0" value="PT"/>
+                    <task id="494" name="Expor Métodos BLL (Users)" color="#8cb6ce" meeting="false" start="2018-08-16" duration="1" complete="100" thirdDate="2018-08-08" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="495" name="Expor Métodos BLL (Admins)" color="#8cb6ce" meeting="false" start="2018-08-17" duration="1" complete="100" thirdDate="2018-08-06" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="496" name="Expor Métodos BLL (Areas)" color="#8cb6ce" meeting="false" start="2018-08-20" duration="1" complete="100" thirdDate="2018-08-06" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="497" name="Expor Métodos BLL (Competitions)" color="#8cb6ce" meeting="false" start="2018-08-21" duration="1" complete="100" thirdDate="2018-08-06" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="498" name="Expor Métodos BLL (Seasons)" color="#8cb6ce" meeting="false" start="2018-08-22" duration="1" complete="100" thirdDate="2018-08-06" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="499" name="Expor Métodos BLL (Matches)" color="#8cb6ce" meeting="false" start="2018-08-23" duration="1" complete="100" thirdDate="2018-08-06" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="500" name="Expor Métodos BLL (Teams)" color="#8cb6ce" meeting="false" start="2018-08-24" duration="1" complete="100" thirdDate="2018-08-06" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="501" name="Expor Métodos BLL (UserHistory)" color="#8cb6ce" meeting="false" start="2018-08-27" duration="1" complete="100" thirdDate="2018-08-06" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="502" name="Expor Métodos BLL (UserStates)" color="#8cb6ce" meeting="false" start="2018-08-28" duration="1" complete="100" thirdDate="2018-08-06" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="503" name="Expor Métodos BLL (Tips)" color="#8cb6ce" meeting="false" start="2018-08-29" duration="1" complete="40" thirdDate="2018-08-06" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="504" name="Expor Métodos BLL (Markets)" color="#8cb6ce" meeting="false" start="2018-08-30" duration="1" complete="0" thirdDate="2018-08-06" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="505" name="Expor Métodos BLL (Newsletters)" color="#8cb6ce" meeting="false" start="2018-08-31" duration="1" complete="0" thirdDate="2018-08-06" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                </task>
+            </task>
+            <task id="507" name="Front Office" color="#ff33ff" meeting="false" start="2018-08-16" duration="29" complete="25" thirdDate="2018-08-17" thirdDate-constraint="0" expand="false">
+                <customproperty taskproperty-id="tpc0" value="PT"/>
+                <task id="513" name="Implementar Sistema User Login" color="#33ff33" meeting="false" start="2018-08-16" duration="4" complete="100" thirdDate="2018-07-16" thirdDate-constraint="0" expand="false">
+                    <depend id="539" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="PT"/>
+                    <task id="517" name="Implementar Login" color="#8cb6ce" meeting="false" start="2018-08-16" duration="2" complete="100" thirdDate="2018-07-16" thirdDate-constraint="0" expand="true">
+                        <depend id="519" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="519" name="Implementar Registar" color="#8cb6ce" meeting="false" start="2018-08-20" duration="1" complete="100" thirdDate="2018-08-17" thirdDate-constraint="0" expand="true">
+                        <depend id="518" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="518" name="Implementar Recuperar Password" color="#8cb6ce" meeting="false" start="2018-08-21" duration="1" complete="100" thirdDate="2018-08-17" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                </task>
+                <task id="539" name="Implementar Editar Perfil" color="#8cb6ce" meeting="false" start="2018-08-22" duration="1" complete="100" thirdDate="2018-07-09" thirdDate-constraint="0" expand="true">
+                    <depend id="639" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="T"/>
+                </task>
+                <task id="542" name="Implementar Sistema de Listagem de Matches" color="#ff6699" meeting="false" start="2018-08-23" duration="9" complete="26" thirdDate="2018-08-13" thirdDate-constraint="0" expand="false">
+                    <depend id="654" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="PT"/>
+                    <task id="639" name="Implementar Listar Matches" color="#8cb6ce" meeting="false" start="2018-08-23" duration="3" complete="30" thirdDate="2018-08-15" thirdDate-constraint="0" expand="true">
+                        <depend id="545" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="545" name="Implementar Filtros por Competitions" color="#8cb6ce" meeting="false" start="2018-08-28" duration="3" complete="50" thirdDate="2018-08-13" thirdDate-constraint="0" expand="true">
+                        <depend id="649" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="649" name="Implementar Listar Prognósticos" color="#8cb6ce" meeting="false" start="2018-08-31" duration="3" complete="0" thirdDate="2018-08-15" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                </task>
+                <task id="648" name="Implementar Visualizador Histórico Prognósticos" color="#0066ff" meeting="false" start="2018-09-05" duration="15" complete="0" thirdDate="2018-08-15" thirdDate-constraint="0" expand="false">
+                    <customproperty taskproperty-id="tpc0" value="PT"/>
+                    <task id="654" name="Implementar Listar Todos" color="#8cb6ce" meeting="false" start="2018-09-05" duration="5" complete="0" thirdDate="2018-08-15" thirdDate-constraint="0" expand="true">
+                        <depend id="658" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="658" name="Implementar Filtros Por Competitions" color="#8cb6ce" meeting="false" start="2018-09-12" duration="5" complete="0" thirdDate="2018-08-15" thirdDate-constraint="0" expand="true">
+                        <depend id="659" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="659" name="Implementar Ordenar Por Campo" color="#8cb6ce" meeting="false" start="2018-09-19" duration="5" complete="0" thirdDate="2018-08-15" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                </task>
+            </task>
+            <task id="506" name="Back Office" color="#0066ff" meeting="false" start="2018-08-17" duration="33" complete="0" thirdDate="2018-07-16" thirdDate-constraint="0" expand="false">
+                <customproperty taskproperty-id="tpc0" value="PT"/>
+                <task id="532" name="Implementar Admin Login" color="#8cb6ce" meeting="false" start="2018-08-17" duration="3" complete="0" thirdDate="2018-07-30" thirdDate-constraint="0" expand="true">
+                    <depend id="728" type="2" difference="0" hardness="Strong"/>
+                    <depend id="732" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="T"/>
+                </task>
+                <task id="728" name="Implementar Gestão de Users" color="#8cb6ce" meeting="false" start="2018-08-28" duration="2" complete="0" thirdDate="2018-08-13" thirdDate-constraint="0" expand="false">
+                    <depend id="748" type="2" difference="0" hardness="Strong"/>
+                    <depend id="753" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="PT"/>
+                    <task id="732" name="Implementar Listar Users" color="#8cb6ce" meeting="false" start="2018-08-28" duration="1" complete="0" thirdDate="2018-08-22" thirdDate-constraint="0" expand="true">
+                        <depend id="735" type="2" difference="0" hardness="Strong"/>
+                        <depend id="744" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="735" name="Implemetar Alterar Estados de Users" color="#8cb6ce" meeting="false" start="2018-08-29" duration="1" complete="0" thirdDate="2018-08-22" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="744" name="Implementar Filtrar Por Estado" color="#8cb6ce" meeting="false" start="2018-08-29" duration="1" complete="0" thirdDate="2018-08-28" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                </task>
+                <task id="748" name="Implementar Sincronizador de Dados" color="#8cb6ce" meeting="false" start="2018-08-30" duration="3" complete="0" thirdDate="2018-08-06" thirdDate-constraint="0" expand="false">
+                    <depend id="758" type="2" difference="0" hardness="Strong"/>
+                    <depend id="763" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="PT"/>
+                    <task id="753" name="Implementar Sincronização da DB com API" color="#8cb6ce" meeting="false" start="2018-08-30" duration="3" complete="0" thirdDate="2018-08-30" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                </task>
+                <task id="758" name="Implementar Gestão de Newsletters" color="#8cb6ce" meeting="false" start="2018-09-04" duration="6" complete="0" thirdDate="2018-08-15" thirdDate-constraint="0" expand="false">
+                    <depend id="777" type="2" difference="0" hardness="Strong"/>
+                    <depend id="785" type="2" difference="0" hardness="Strong"/>
+                    <customproperty taskproperty-id="tpc0" value="PT"/>
+                    <task id="763" name="Implementar Criar Newsletter" color="#8cb6ce" meeting="false" start="2018-09-04" duration="2" complete="0" thirdDate="2018-09-04" thirdDate-constraint="0" expand="true">
+                        <depend id="764" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="764" name="Implementar Guardar Newsletter" color="#8cb6ce" meeting="false" start="2018-09-06" duration="2" complete="0" thirdDate="2018-09-04" thirdDate-constraint="0" expand="true">
+                        <depend id="770" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="770" name="Implementar Enviar Newsletter" color="#8cb6ce" meeting="false" start="2018-09-10" duration="2" complete="0" thirdDate="2018-09-04" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                </task>
+                <task id="777" name="Implementar Visualizador/Editar de Dados" color="#8cb6ce" meeting="false" start="2018-09-12" duration="15" complete="0" thirdDate="2018-08-22" thirdDate-constraint="0" expand="false">
+                    <customproperty taskproperty-id="tpc0" value="PT"/>
+                    <task id="785" name="Implementar View de Dados" color="#8cb6ce" meeting="false" start="2018-09-12" duration="5" complete="0" thirdDate="2018-09-12" thirdDate-constraint="0" expand="true">
+                        <depend id="788" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="788" name="Implementar Filtragem por Tabela" color="#8cb6ce" meeting="false" start="2018-09-19" duration="5" complete="0" thirdDate="2018-09-12" thirdDate-constraint="0" expand="true">
+                        <depend id="790" type="2" difference="0" hardness="Strong"/>
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                    <task id="790" name="Implementar Edição de Dados" color="#8cb6ce" meeting="false" start="2018-09-26" duration="5" complete="0" thirdDate="2018-09-12" thirdDate-constraint="0" expand="true">
+                        <customproperty taskproperty-id="tpc0" value="T"/>
+                    </task>
+                </task>
+            </task>
+            <task id="1269" name="Project Managing" color="#00cccc" meeting="false" start="2018-07-13" duration="74" complete="30" thirdDate="2018-07-13" thirdDate-constraint="0" expand="false">
+                <customproperty taskproperty-id="tpc0" value="PT"/>
+                <task id="1270" name="ATA 01 - Com Cliente" color="#ff9900" meeting="false" start="2018-07-13" duration="1" complete="100" thirdDate="2018-06-25" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="E"/>
+                </task>
+                <task id="1284" name="ATA 02 - Com a Equipa + Ponto Situação" color="#ff9900" meeting="false" start="2018-07-26" duration="1" complete="100" thirdDate="2018-06-25" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="E"/>
+                </task>
+                <task id="1288" name="ATA 03 - Com Cliente" color="#ff9900" meeting="false" start="2018-09-20" duration="1" complete="0" thirdDate="2018-06-25" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="E"/>
+                </task>
+                <task id="1291" name="ATA 04 - Com Equipa + Ponto Situação" color="#ff9900" meeting="false" start="2018-09-28" duration="1" complete="0" thirdDate="2018-06-25" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="E"/>
+                </task>
+                <task id="1297" name="ATA 05 - Final + Ponto de Situação" color="#ff9900" meeting="false" start="2018-10-25" duration="1" complete="0" thirdDate="2018-06-04" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="E"/>
+                </task>
+                <task id="1307" name="Entrega Análise de Sistemas" color="#ff33ff" meeting="false" start="2018-07-18" duration="1" complete="100" thirdDate="2018-07-09" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="E"/>
+                </task>
+                <task id="1332" name="Apresentação Análise Sistemas" color="#66ff33" meeting="false" start="2018-07-19" duration="1" complete="100" thirdDate="2018-09-17" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="E"/>
+                </task>
+                <task id="1316" name="Entrega Inicial Gestão de Projecto" color="#ff0000" meeting="false" start="2018-09-11" duration="1" complete="0" thirdDate="2018-07-06" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="E"/>
+                </task>
+                <task id="1335" name="Apressentação Gestão de Projecto" color="#66ff33" meeting="false" start="2018-09-12" duration="1" complete="0" thirdDate="2018-07-30" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="E"/>
+                </task>
+                <task id="1322" name="Entrega Intermédia Gestão Projecto" color="#ff0000" meeting="false" start="2018-09-27" duration="1" complete="0" thirdDate="2018-07-02" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="E"/>
+                </task>
+                <task id="1337" name="Apresentação Ponto Situação" color="#66ff33" meeting="false" start="2018-09-28" duration="1" complete="0" thirdDate="2018-07-09" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="E"/>
+                </task>
+                <task id="1324" name="Entrega Final Gestão Projecto" color="#ff0000" meeting="false" start="2018-10-24" duration="1" complete="0" thirdDate="2018-07-02" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="E"/>
+                </task>
+                <task id="1326" name="Entrega Relatório + PPT (Apresentação Final)" color="#66ff33" meeting="false" start="2018-10-25" duration="1" complete="0" thirdDate="2018-07-02" thirdDate-constraint="0" expand="true">
+                    <customproperty taskproperty-id="tpc0" value="E"/>
+                </task>
+            </task>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

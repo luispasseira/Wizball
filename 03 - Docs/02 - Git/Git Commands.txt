@@ -1,0 +1,8 @@
+
+	- git branch branchName			Cria um novo branch.
+	- git branch -d branchName		Remove o branch especificado (Apenas se o branch em questão já tenha feito o merging com o master).
+	- git branch -D branchName		Remove o branch especificado (Mesmo se o branch em questão não tenha feito o merging com o master).
+	- git checkout branchName		Muda para o branch especificado.
+
+	- git branch				Lista todos os branchs.
+	- git branch --merged			Informa que branchs estão up-to-date(merged) com o branch master.

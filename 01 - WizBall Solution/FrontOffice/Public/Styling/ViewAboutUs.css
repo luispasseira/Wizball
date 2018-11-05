@@ -1,0 +1,146 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.form-body {
+    margin: 0;
+    border-radius: 0;
+    color: white;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+}
+.form-body h5 {
+        color: yellowgreen;
+        align-self: flex-end;
+        margin: 0;
+    }
+
+hr {
+    border: solid 1px white;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.AUTxt{
+    font-size: 10px;
+}
+
+.vl {
+    width: 2px;
+    height: 80px;
+    background-color: white;
+    display: inline;
+    margin: 0 15px;
+}
+.images img{
+    max-height:80px;
+    display:inline;
+}
+
+
+@media only screen and (min-width:576px) {
+    .form-body {
+        margin: 70px;
+        padding: 20px;
+        color: white;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0,0,0, 0.8);
+    }
+
+.form-body h5 {
+    color: yellowgreen;
+    align-self: flex-end;
+    margin: 0;
+}
+
+hr {
+    border: solid 1px white;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.AUTxt {
+    font-size: 12px;
+}
+
+.imageHR{
+    display: none;
+}
+
+}
+
+@media only screen and (min-width:960px) {
+
+    h2 {
+        padding-bottom:20px;
+    }
+    .form-body {
+        padding: 40px;
+        max-width: 960px;
+        margin: 90px auto;
+       
+    }
+
+    .AUTxt p{
+        font-size: 16px;
+        /*padding:30px 0 10px 0;*/
+    }
+
+
+    .status {
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    .images{
+        padding-top:50px;
+        width:100%;
+        display:flex;
+        justify-content:space-around;
+    }
+}
+
+.blT {
+    justify-content: flex-start;
+    color: dodgerblue;
+    font-size: 14px;
+    text-align: left;
+}
+
+.people {
+    width: 100%;
+}
+
+.people ul {
+    font-size: 10px;
+    list-style-type: none;
+    margin-bottom:0;
+}
+
+.AUTxt{
+    text-align: justify;
+}
+
+.people hr {
+    margin-top:15px;
+    margin-bottom: 10px;
+}
+
+.people ul li div {
+    display:inline-block;
+    min-width: 120px;
+}

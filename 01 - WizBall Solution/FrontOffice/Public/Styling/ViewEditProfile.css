@@ -1,0 +1,382 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #bbb;
+}
+form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+#background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Public/Imgs/Wizball/bg-min.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+
+.form-wrapper {
+    width: 60%;
+    min-width: 320px;  
+}
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 10px;
+    width: 100%;
+    background-color: #fff;
+}
+.form-header img {
+    height: 30px;
+}
+
+
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(4,4,4,0.7);
+    padding: 40px;
+}
+.form-body h5 {
+    color: yellowgreen;
+    align-self: flex-end;
+    margin: 0;
+}
+hr {
+    border: solid 1px white;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+
+.form-user-picture{
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    width:100%;
+    margin-bottom:40px;
+}
+#imgUserPic{
+    height:100px;
+}
+
+
+#fileuploadUserPicture{
+    display:none;
+}
+.customFileUpload {
+    padding: 0 30px;
+}
+.customFileUpload #upload-status {
+    font-size:11px;
+    color:orange;
+}
+#btnCustomFileUpload {
+    background-color: transparent;
+    border: none;
+    color: yellowgreen;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+
+.form-groups {
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
+.form-body .form-imputs-labels {
+    color: white;
+    margin: 0;
+    font-size: 12px;
+    color: yellowgreen;
+}
+.form-body .form-inputs {
+    width: 100%;
+    font-size: 12px;
+}
+
+.status {
+    font-size: 12px;
+    display: inline-block;
+}
+
+
+.form-checkbox {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 25px;
+}
+.form-check-label {
+    color: yellowgreen;
+    font-size: 12px;
+}
+
+
+.form-submit {
+    margin-top: 30px;
+    padding: 3px 0;
+    width: 200px;
+    font-weight: bolder;
+    align-self: flex-end;
+    font-size: 12px;
+}
+
+
+
+
+
+/* MODAL UPDATE CONFIRMATION */
+#outter-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+#inner-modal {
+    background-color: #fff;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 70%;
+    border-radius: 4px;
+}
+
+
+#modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding-bottom: 6px;
+}
+#modal-logo {
+    height: 25px;
+}
+
+
+#modal-message {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+#modal-primary-message {
+    font-size: 11px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+}
+
+
+#modal-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-btn {
+    width: 100px;
+    min-width: 70px;
+    margin: 30px 15px 0 15px;
+    color: white !important;
+    font-size: 10px;
+}
+/* MODAL UPDATE CONFIRMATION */
+
+
+
+/* changes modal ----------------------------------*/
+#outterModalx {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+#inner-modalx {
+    background-color: #fff;
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 4px;
+}
+
+
+#modal-headerx {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding-bottom: 6px;
+}
+
+#modal-logox {
+    height: 30px;
+}
+
+#modal-closex {
+    color: yellowgreen;
+}
+#modal-closex:hover,
+#modal-closex:focus {
+    color: orange;
+    cursor: pointer;
+}
+
+
+#modal-messagex {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 50px;
+}
+
+#modal-primary-messagex {
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+#modal-prime-messagex {
+    text-align: center;
+    font-size: 26px;
+    margin: 0;
+    padding: 0;
+}
+
+#modal-footerx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-top: 6px;
+}
+
+#modal-counter-messagex {
+    margin: 0px;
+}
+/*----------------------------------*/
+
+@media only screen and (min-width:960px) {
+
+    .form-header img {
+        height: 50px;
+    }
+    .form-submit, .status {
+        font-size: 16px;
+    }
+    .form-body .form-imputs-labels {
+        font-size: 15px;
+    }
+
+
+    .form-groups {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 25px;
+        height: 80px;
+    }
+    .sub-groups {
+        width: 48%;
+    }
+    .form-check-label {
+        font-size: 15px;
+    }
+    .form-body .form-inputs {
+        font-size: 15px;
+    }
+
+
+    /* MODAL LOGOUT */
+    #inner-modal {
+        background-color: #fff;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid #888;
+        width: 40%;
+        border-radius: 4px;
+    }
+
+
+    #modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        padding-bottom: 6px;
+    }
+    #modal-logo {
+        height: 30px;
+    }
+
+
+    #modal-message {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 15px;
+    }
+    #modal-primary-message {
+        font-size: 24px;
+        text-align: center;
+        margin: 0;
+        padding: 50px 0;
+    }
+
+
+    #modal-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-btn {
+        width: 200px;
+        min-width: 100px;
+        margin: 30px 30px 0 30px;
+        color: white !important;
+        font-size: 15px;
+    }
+    /* MODAL LOGOUT */
+}
+
+
+
+@media only screen and (max-height:662px) {
+
+    /* Prevents form from beeing cutted when in small devices. */
+    form {
+        align-items: flex-start;
+    }
+    
